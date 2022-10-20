@@ -1,0 +1,3 @@
+win10toast==0.9
+regex
+beautifulsoup4==4.11.1

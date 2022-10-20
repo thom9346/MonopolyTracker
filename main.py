@@ -6,6 +6,7 @@ import time
 
 from win10toast import ToastNotifier
 
+amount_of_spins_until_notification = 104
 last_roll_checkmark = 1
 has_shown_notification = False
 
@@ -30,7 +31,7 @@ def get_spins_since_4rolls():
     global has_shown_notification
     if(spins_since_last_4roll < last_roll_checkmark):
         print("writing to file...")
-        f = open("spinstogetrolls.txt", "a")
+        f = open("spins_to_get_rolls.txt", "a")
         f.write("\n 4 rolls after: " + str(last_roll_checkmark))
         f.close()
         if(has_shown_notification == True):
@@ -42,8 +43,8 @@ def get_spins_since_4rolls():
 
     last_roll_checkmark = spins_since_last_4roll
 
-    if(spins_since_last_4roll > 205):
-        print("Its over 205 rolls")
+    if(spins_since_last_4roll > amount_of_spins_until_notification):
+        print("Its over " + str(amount_of_spins_until_notification) + "rolls since last hit!")
         print(spins_since_last_4roll)   
 
         if(has_shown_notification == False):
@@ -52,7 +53,7 @@ def get_spins_since_4rolls():
 
     else:         
      print("nothing happened.")
-     print("lol" + str(last_roll_checkmark))
+     print("Rolls since last 4-roll: " + str(last_roll_checkmark))
 
 
 starttime = time.time()
