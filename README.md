@@ -4,7 +4,7 @@ A small python project that gives you a notification after a specified amount of
 
 It works by scraping the data from [Tracksino](https://tracksino.com/monopoly) every minute and checking the "4-roll Spin Since" number to give you a notification. Every time a 4-roll is hit, it will write it to the file "spins_to_get_rolls.txt". Some of the data currently in there is from having the program running over-night. Please note that this program is not maintained, and should tracksino undergo major changes, it is likely that it will no longer function.
 
-Note that this project was done for educational purposes only, and is in no way recommended to use for gambling purposes. Just because it has been X amount of time since the last time Y event happened, it does not increase the chance of an event to be more likely to happen in the future. Thinking it does is refered to as [Gambler's Fallacy](https://www.investopedia.com/terms/g/gamblersfallacy.asp). Please be gambling aware.
+Note that this project was done for educational purposes only, and is in no way recommended to use for gambling purposes. Please refer to [Gambler's Fallacy](https://www.investopedia.com/terms/g/gamblersfallacy.asp) if you believe this will give you any sort of advantage. This is not the case, and it will NOT give any advantage when gambling.
 
 # How to use
 
